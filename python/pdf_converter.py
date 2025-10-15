@@ -1,5 +1,36 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+# -----------------------------------------------------------------------------
+# (C) 2025 YOKOMINE Yoshihiro, STOLOC Labs. , ICHIBYTE Inc All rights reserved.
+# -----------------------------------------------------------------------------
+# English
+# Overview:
+#   `pdf_converter.py` converts PDF files into JPEG images and thumbnails,
+#   supporting single-file and bulk folder processing with optional resizing.
+# Preparation:
+#   Ensure Poppler is installed and available in your PATH for pdf2image.
+# Dependency installation:
+#   All platforms (pip): `pip install pdf2image pillow`
+#   Linux (Debian/Ubuntu): `sudo apt-get install poppler-utils`
+#   Windows: Install Poppler from
+#     `https://github.com/oschwartz10612/poppler-windows/releases` and add the
+#     `bin` folder to PATH.
+#   macOS (Homebrew): `brew install poppler`
+# -----------------------------------------------------------------------------
+# 日本語
+# 概要:
+#   `pdf_converter.py` は PDF ファイルを JPEG 画像やサムネイルに変換する
+#   コマンドラインツールで、単一ファイル処理とフォルダ内一括処理、任意の
+#   リサイズ指定に対応します。
+# 事前準備:
+#   pdf2image が動作するように Poppler をインストールし PATH に通してください。
+# 依存関係のインストール:
+#   全OS共通 (pip): `pip install pdf2image pillow`
+#   Linux (Debian/Ubuntu): `sudo apt-get install poppler-utils`
+#   Windows: `https://github.com/oschwartz10612/poppler-windows/releases` から
+#     Poppler を入手し `bin` フォルダを PATH に追加します。
+#   macOS (Homebrew): `brew install poppler`
+# -----------------------------------------------------------------------------
 
 import argparse
 import os
